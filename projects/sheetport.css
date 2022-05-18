@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*----Navbar----*/
+
+nav{
+    background: #274e97fb;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+label.logo{
+    color: blanchedalmond;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    padding-right: 25px;
+}
+
+nav ul li a{
+    color:blanchedalmond;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+a.active,a:hover{
+    background: #3972dbfb;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: blanchedalmond;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+/*----Home----*/
+.home{
+    background: url(/img/proyecto3.png);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 90vh;
+    min-height: 100vh;
+    color: rgb(255, 235, 205);
+    font-family: 'Ubuntu',sans-serif;
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    flex-direction: column;
+}
+
+.homemain{
+    background-color: #274e97fa;
+    color: #000000fb;
+    position: relative;
+    display: flex;
+    top: 25px;
+    height: 600px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.homecontent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.subtitle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+
+/*---Footer---*/
+.footercontent{
+    font-family: 'Ubuntu',sans-serif;
+    background:#111;
+    height: 16vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+
+.footercontent .contact{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+/*------ Button ------*/
+.go-spanish .btn-spanish{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #274e97;
+    padding: 15px 20px;
+    color: blanchedalmond;
+    border-radius: 5px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 8px 15px rgba(0,0,0, 0.3);
+    z-index: 99;
+}
+
+.go-spanish .btn-spanish:hover{
+    color: #274e97;
+    background-color: blanchedalmond;
+    transform: translateY(-7px);
+}
+
+
+
+/*---Responsive---*/
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:893px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #112344fb;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #3972dbfb;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .homemain{
+        position:static;
+        height: 360px;
+        width: 550px;
+    }
+    .homecontent,.subtitle{
+        position: static;
+        font-size: 25px;
+    }
+    .go-spanish .btn-spanish{
+        padding: 5px 5px 5px 5px;
+        line-height: 5px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .go-spanish .btn-spanish span{
+        display: none;
+    }
+    .footercontent{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:626px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 40px;
+    }
+    .homemain{
+        height: 325px;
+        width: 400px;
+    }
+    .homecontent, .subtitle{
+        font-size: 15px;
+    }
+    .footercontent{
+        font-size: 10px;
+    }
+}

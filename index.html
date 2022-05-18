@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/5f2a9324f2.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="/img/icons/m-icon.png" >
+
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+        <!-- Navbar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+            <label class="logo">&lt;!MoralesDev&gt;.</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hey there!, Welcome to my Portfolio &#58&#41.</div>
+                <div class="text-2">My name is <span>Bruno Morales</span>.</div>
+                <div class="text-3">And I'm a <span class="type"></span>
+                    <!-- Typing Effect -->
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                    <script>
+                        var typed = new Typed('.type', {
+                            strings: ['Developer.','Student.','Tech Enthusiast.'],
+                            typeSpeed: 100,
+                            backSpeed: 70,
+                            loop: true,
+                        })
+                    </script>
+                    </ul>
+                </br>
+                <a href="#contact">Hire me.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- About -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About <span>me.</span></h2>
+                <div class="about-content">
+                    <div class="column-left">
+                        <img class="profpic" src="/img/img-profpic0.jpeg">
+                    </div>
+                    <div class="column-right">
+                        <div class="text">I'm Bruno, a <span>self-taught</span> Front-End Developer.</div>
+                        <p>I'm currently studing at college to obtain my computing degree, however, it's my first year. I also learned how to speak English at a Language Institute and by myself.
+                            <br>
+                        <p> I would like to apply to a position like Trainee/Jr Developer or similar.</p>
+                            <br>
+                        <p> I'm interested in obtaining new soft and hard skills, I'll offer all my passion for learning new stuff and being a proficient worker.</p>    
+                        </p>
+                        <a href="download/CV Bruno Morales English.pdf" download>Download <span>CV.</span></a>
+                    </div>
+                </div>
+                    <h2 class="second-title">My <span>skills.</span></h2>
+                <div class="about-container">
+                        <div class="box"><img src="/img/icons/html-icon.png" alt="HTML"></div>
+                        <div class="box"><img src="/img/icons/css-icon.png" alt="CSS"></div>
+                        <div class="box"><img src="/img/icons/javascript-icon.png" alt="JavaScript"></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Services -->
+        
+        <section class="services" id="services">
+            <section class="services" id="services">
+              <div class="max-width">
+                  <h2 class="title">My <span>services.</span></h2>
+                  <div class="serv-content">
+                      <div class="card">
+                          <div class="box">
+                              <i class="fas fa-paint-brush"></i>
+                              <div class="text">Web Design.</div>
+                                  <p class="card-text">From HTML, to JavaScript, I can design all the Layout of your Website by using cool animations and aesthetic designs.</p>
+                              </div>
+                      </div>
+  
+                      <div class="card">
+                          <div class="box">
+                              <i class="fas fa-chart-line"></i>
+                              <div class="text">TeamWork.</div>
+                                  <p class="card-text">I like teamwork, and enjoy the experience of the process and the result of working together. Always is a pleasure to make new friends &#58&#41.</p>
+                              </div>
+                      </div>
+  
+                      <div class="card">
+                          <div class="box">
+                              <i class="fas fa-code"></i>
+                              <div class="text">Code Development.</div>
+                                  <p class="card-text">I have knowledge of JavaScript coding, from basics, to algorithms and data structures!</p>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        <hr>
+
+        <!--Projects-->
+        <section class="projects" id="projects">
+            <h1 class="mastertitle">My <span>Projects.</span></h1>
+            <div class="project-boxes">
+            <div class="project-box">
+                <h1 class="project-title">Blog</h1>
+                <p class="project-des">Simple Blog made with HTML & CSS as part of an exam. It has cool animations and intereseting desing but no responsive attributes.</p>
+                <a href="https://github.com/Moraless6/Proyecto-Blog" target="_blank" class="project-icon"><i class="fa-brands fa-github"></i>Git</a>
+                <a href="https://628563e1c4237102a91fffdf--polite-puffpuff-f3a198.netlify.app/"  target="_blank" class="project-icon"><i class="fa-solid fa-wifi"></i>Live ver.</a>
+                <p class="project-des">Click the pic for guided accompaniment (highly recommended)</p>
+                <a href="/projects/sheeten.html" target="_blank"><img class="project-pic" src="/img/proyecto1.png"></a>
+            </div>
+            <div class="project-box">
+                <h1 class="project-title">Blue Prism App</h1>
+                <p class="project-des">Application that makes sure if X application exists, then execute, analize operations, solve them, write and save the results in an excel file, then kills the process.</p>
+                <a href="https://github.com/Moraless6/Blue-Prism-App"  target="_blank" class="project-icon"><i class="fa-brands fa-github"></i>Git</a>
+                <p class="project-des">Click the pic for guided accompaniment (highly recommended)</p>
+                <a href="/projects/sheetenbp.html" target="_blank"><img class="project-pic" src="/img/proyecto2.png"></a>
+            </div>
+            <div class="project-box">
+                <h1 class="project-title">Portfolio</h1>
+                <p class="project-des">Portfolio made with HTML, CSS & a little bit of JavaScript. It's my greatest project ever, and i wanted to show to the world what i can do. Responsive is available in this last version.</p>
+                <a href="https://github.com/Moraless6/Portafolio-2022" target="_blank"class="project-icon"><i class="fa-brands fa-github"></i>Git</a>
+                <a href="https://62856e0bd941b30bcf604acf--radiant-pie-f65d98.netlify.app/" target="_blank" class="project-icon"><i class="fa-solid fa-wifi"></i>Live ver.</a>
+                <p class="project-des">Click the pic for guided accompaniment (highly recommended)</p>
+                <a href="/projects/sheetenport.html" target="_blank"><img class="project-pic" src="/img/proyecto3.png"></a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <hr>
+
+
+        <!--Button-->
+        <div class="go-spanish">
+            <a href="indexes.html" class="btn-spanish"><img src="img/2560px-Flag_of_Spain.svg.jpg"><span> Español</span></img></a>
+
+        <!--Footer-->
+     <footer id="contact" class="footercontent">
+        <div class="contact">
+            <h3>Contact:</h3>
+                <p><i class="fa-solid fa-envelope"></i> Email: brunomorales2303@outlook.es <br><i class="fa-solid fa-phone"></i> Mobile: +54 9 11 2620-1596 <br><i class="fa-solid fa-globe"></i> From Buenos Aires, Argentina.</p>
+        </div>
+
+        <div class="memoral">
+            <h3>Created By Bruno Morales. <br> <span class="far fa-copyright"></span> 2022  All rights reserved.</h3>
+            <h4>In honor to all that people who trust and support me.</h4>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</html>
